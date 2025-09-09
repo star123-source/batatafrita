@@ -7,4 +7,4 @@ rodri_circulo.style.borderRadius = '$(tamanho_rodri)px`
 rodri_circulo.style.width = $(tamanho_rodri) px`
 rodri_circulo.style.heigth = $(tamanho_rodri) px`
 tamanho_rodri = tamanho_rodri+20
-
+{}
