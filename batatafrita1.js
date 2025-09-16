@@ -34,3 +34,4 @@ rodri_circulo.addEventListener('dbclick' , () => {
 <input id='value' type="number">
 <\form>
 <p style="display: none;"><\p>
+<\section>
