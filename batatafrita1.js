@@ -6,5 +6,5 @@
 };
 
 const imagem = document.GetElementById('foto')
-let foto _ = false
+let foto _t = false
 
