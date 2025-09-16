@@ -1,52 +1,52 @@
- Function mudarCor (novaCor) {
-   var elemento = document.getElementById ("para1)
-   elemento.style.backgroundColor = novaCor
-   elemento.style.backgroundColor = novaCor
-   elemento.style.display ='inline;
-};
-
-const imagem = document.GetElementById('foto')
- let foto _t = false
- imagem.addEventListener( 'click',()=>{
- if (foto_t== false){
- imagem.src = 'foto';
- foto_t = true
- }else{
- imagem.src = ´teste.jpg´
- foto_t  = false;
+// Função para mudar cor de fundo de um parágrafo
+function mudarCor(novaCor) {
+  var elemento = document.getElementById("para1");
+  elemento.style.backgroundColor = novaCor;
+  elemento.style.display = 'inline';
 }
- });
 
-const rodri_circulo = document.getElementById('circulo')
-let rodri_tamanho  = 1
+// Lógica para alternar imagem
+const imagem = document.getElementById('foto');
+let foto_t = false;
 
-rodri_circulo.addEventListener('dbclick' , () => {
- alert (rodri_tamanho)
- rodri_circulo.style.borderRadius =  ´$(rodri_tamanho}px`;
- rodri_circulo.style.width = `$(rodri_tamanho*2)px` ;
- rodri_circulo.style.height = `$(rodri_tamanho*2)px` ;
- rodri_tamanho += 30;
+imagem.addEventListener('click', () => {
+  if (!foto_t) {
+    imagem.src = 'foto.jpg'; // Substitua pelo caminho correto
+    foto_t = true;
+  } else {
+    imagem.src = 'teste.jpg'; // Substitua pelo caminho correto
+    foto_t = false;
+  }
 });
 
-<section id="sc">
-<form id= "texto">
-<label for="texto">Digita sua idade</label>
-<input id='value' type="number">
-</form>
-<p style="display: none;"></p>
-</section>
+// Lógica para redimensionar o círculo
+const rodri_circulo = document.getElementById('circulo');
+let rodri_tamanho = 30;
 
-form.addEventListener ("submit",(event)=>{
+rodri_circulo.addEventListener('dblclick', () => {
+  alert(rodri_tamanho);
+  rodri_circulo.style.borderRadius = `${rodri_tamanho}px`;
+  rodri_circulo.style.width = `${rodri_tamanho * 2}px`;
+  rodri_circulo.style.height = `${rodri_tamanho * 2}px`;
+  rodri_tamanho += 30;
+});
+
+// Validação de idade
+const form = document.getElementById("texto-form");
+const section = document.getElementById("sc");
+
+form.addEventListener("submit", (event) => {
   event.preventDefault();
-  input=form.query.Selector("input")
-  if(parseInt) (input.value) <24 || isNaN (input.value) ){
-  var p = section.querySelector('p')
-  p.innerText = "professor é mais velho"
-  p.style.display =   'block 
-}else{
+  const input = form.querySelector("input");
+  const valor = parseInt(input.value);
+  const p = section.querySelector('p');
 
-  var p = section.querySeletor('p')
-  p.innerHTML = '<h1> Olá, Mundo <\h1>'
-  p.style.display = ´block´ 
-}
+  if (isNaN(valor) || valor < 24) {
+    p.innerText = "Professor é mais velho";
+    p.style.display = 'block';
+  } else {
+    p.innerHTML = '<h1>Olá, Mundo</h1>';
+    p.style.display = 'block';
+  }
 });
+
