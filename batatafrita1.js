@@ -3,3 +3,5 @@
    elemento.style.backgroundColor = novaCor
    elemento.style.backgroundColor = novaCor
    elemento.style.display
+
+ }
