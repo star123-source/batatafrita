@@ -30,11 +30,11 @@ rodri_circulo.addEventListener('dbclick' , () => {
 
 <section id="sc">
 <form id= "texto">
-<label for="texto">Digita sua idade<\label>
+<label for="texto">Digita sua idade</label>
 <input id='value' type="number">
-<\form>
-<p style="display: none;"><\p>
-<\section>
+</form>
+<p style="display: none;"></p>
+</section>
 
 form.addEventListener ("submit",(event)=>{
   event.preventDefault();
