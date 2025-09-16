@@ -9,7 +9,7 @@ const imagem = document.GetElementById('foto')
 let foto _t = false
 imagem.addEventListener( 'click',()=>){
 if (foto_t== false){
- 
+ imagem.src =
 }
  })
 
