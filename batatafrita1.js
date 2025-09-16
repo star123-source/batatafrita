@@ -12,8 +12,8 @@ if (foto_t== false){
  imagem.src = 'foto';
  foto_t = true
  }else{
- imagem.src = ´teste.png´
- foto_t  = false
+ imagem.src = ´teste.jpg´
+ foto_t  = false;
 }
  });
 
