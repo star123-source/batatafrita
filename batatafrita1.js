@@ -3,10 +3,8 @@
    elemento.style.backgroundColor = novaCor
    elemento.style.backgroundColor = novaCor
    elemento.style.display ='inline;
-
- };
+};
 
 const imagem = document.GetElementById('foto')
-
 let foto _ = false
 
