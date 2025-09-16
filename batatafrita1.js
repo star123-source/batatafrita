@@ -2,6 +2,7 @@
 function mudarCor(novaCor) {
   var elemento = document.getElementById("para1");
   elemento.style.backgroundColor = novaCor;
+  elemento.style.backgroundColor = novaCor;
   elemento.style.display = 'inline';
 }
 
@@ -11,10 +12,10 @@ let foto_t = false;
 
 imagem.addEventListener('click', () => {
   if (!foto_t) {
-    imagem.src = 'foto.jpg'; // Substitua pelo caminho correto
+    imagem.src = 'foto.jpg'; 
     foto_t = true;
   } else {
-    imagem.src = 'teste.jpg'; // Substitua pelo caminho correto
+    imagem.src = 'teste.jpg';
     foto_t = false;
   }
 });
@@ -39,12 +40,14 @@ form.addEventListener("submit", (event) => {
   event.preventDefault();
   const input = form.querySelector("input");
   const valor = parseInt(input.value);
-  const p = section.querySelector('p');
+  c
 
   if (isNaN(valor) || valor < 24) {
     p.innerText = "Professor é mais velho";
     p.style.display = 'block';
+
   } else {
+
     p.innerHTML = '<h1>Olá, Mundo</h1>';
     p.style.display = 'block';
   }
