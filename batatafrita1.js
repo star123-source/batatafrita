@@ -2,6 +2,11 @@
    var elemento = document.getElementById ("para1)
    elemento.style.backgroundColor = novaCor
    elemento.style.backgroundColor = novaCor
-   elemento.style.display
+   elemento.style.display ='inline;
 
- }
+ };
+
+const imagem = document.GetElementById('foto')
+
+let foto _ = false
+
