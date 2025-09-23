@@ -16,3 +16,4 @@ elemento.style.display = 'inline';
 
 document.querySelector (#'para1')
   
+//site//
