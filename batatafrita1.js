@@ -46,7 +46,7 @@ form.addEventListener("submit", (event) =>{
   }else{
   
   var p = section.querySelector('p')
-  p.innerHTML = '<h1> Olá, Mundo <\h1>'
+  p.innerHTML = '<h1> Olá, Mundo </h1>'
   p.style.display = 'block'
   }
 
