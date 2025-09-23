@@ -53,8 +53,11 @@ form.addEventListener("submit", (event) =>{
 
  const container = document.getElementById(`fotos`)
  const imagens = container.getElementsByTagName (`img`);
-
+ 
+let (foto_troca = false) {}
  container.addEventListener(`click`,()=> {
+  if (foto_troca) === false) {
+    for (let i = 0; 1 <imagens.length; i++)}
     for(let i =0; i < imagens.length; i++) {
         imagens[i].src = `baixados(${i + 5}).jpg`;
     }
